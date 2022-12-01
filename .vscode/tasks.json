@@ -3,21 +3,328 @@
 	"tasks": [
 		{
 			"type": "cargo",
-			"command": "build",
-			"problemMatcher": [
-				"$rustc"
-			],
 			"group": "build",
-			"label": "rust: cargo build"
-		},
-		{
-			"type": "cargo",
 			"command": "run",
 			"problemMatcher": [
 				"$rustc"
 			],
+			"args": [
+				"--bin",
+				"day_1"
+			],
+			"label": "Day 1: run"
+		},
+		{
+			"type": "cargo",
 			"group": "build",
-			"label": "rust: cargo run"
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_2"
+			],
+			"label": "Day 2: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_3"
+			],
+			"label": "Day 3: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_4"
+			],
+			"label": "Day 4: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_5"
+			],
+			"label": "Day 5: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_6"
+			],
+			"label": "Day 6: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_7"
+			],
+			"label": "Day 7: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_8"
+			],
+			"label": "Day 8: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_9"
+			],
+			"label": "Day 9: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_10"
+			],
+			"label": "Day 10: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_11"
+			],
+			"label": "Day 11: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_12"
+			],
+			"label": "Day 12: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_13"
+			],
+			"label": "Day 13: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_14"
+			],
+			"label": "Day 14: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_15"
+			],
+			"label": "Day 15: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_16"
+			],
+			"label": "Day 16: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_17"
+			],
+			"label": "Day 17: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_18"
+			],
+			"label": "Day 18: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_19"
+			],
+			"label": "Day 19: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_20"
+			],
+			"label": "Day 20: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_21"
+			],
+			"label": "Day 21: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_22"
+			],
+			"label": "Day 22: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_23"
+			],
+			"label": "Day 23: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_24"
+			],
+			"label": "Day 24: run"
+		},
+		{
+			"type": "cargo",
+			"group": "build",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"args": [
+				"--bin",
+				"day_25"
+			],
+			"label": "Day 25: run"
 		}
 	]
 }
