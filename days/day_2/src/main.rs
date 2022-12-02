@@ -1,9 +1,10 @@
-use std::fs;
+use std::{collections::HashMap, fs};
 
 fn main() {
     let input = fs::read_to_string("days/day_2/input.txt").unwrap();
     part_1(&input);
-    part_2(&input);
+    // part_2(&input);
+    clean(&input);
 }
 
 enum Win {
@@ -122,4 +123,50 @@ fn part_2(input: &String) {
     }
 
     println!("{points}");
+}
+
+fn clean(input: &String) {
+    let score_table = HashMap::from([("X", 1), ("Y", 2), ("Z", 3)]);
+    let round_table = HashMap::from([
+        (("A", "X"), 3),
+        (("A", "Y"), 6),
+        (("A", "Z"), 0),
+        (("B", "X"), 0),
+        (("B", "Y"), 3),
+        (("B", "Z"), 6),
+        (("C", "X"), 6),
+        (("C", "Y"), 0),
+        (("C", "Z"), 3),
+    ]);
+
+    let score_table_2 = HashMap::from([("X", 0), ("Y", 3), ("Z", 6)]);
+    let round_table_2 = HashMap::from([
+        (("A", "X"), 3),
+        (("A", "Y"), 1),
+        (("A", "Z"), 2),
+        (("B", "X"), 1),
+        (("B", "Y"), 2),
+        (("B", "Z"), 3),
+        (("C", "X"), 2),
+        (("C", "Y"), 3),
+        (("C", "Z"), 1),
+    ]);
+
+    let mut score = 0;
+    let mut score_2 = 0;
+
+    for line in input.lines() {
+        let mut round = line.split(' ');
+        let op = round.next().unwrap();
+        let me = round.next().unwrap();
+
+        score += round_table.get(&(op, me)).unwrap();
+        score += score_table.get(me).unwrap();
+
+        score_2 += round_table_2.get(&(op, me)).unwrap();
+        score_2 += score_table_2.get(me).unwrap();
+    }
+
+    println!("{score}");
+    println!("{score_2}");
 }
