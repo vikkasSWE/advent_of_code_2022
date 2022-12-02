@@ -3,7 +3,7 @@ use std::{collections::HashMap, fs};
 fn main() {
     let input = fs::read_to_string("days/day_2/input.txt").unwrap();
     part_1(&input);
-    // part_2(&input);
+    part_2(&input);
     clean(&input);
 }
 
@@ -156,7 +156,7 @@ fn clean(input: &String) {
     let mut score_2 = 0;
 
     for line in input.lines() {
-        let mut round = line.split(' ');
+        let mut round = line.split_whitespace();
         let op = round.next().unwrap();
         let me = round.next().unwrap();
 
