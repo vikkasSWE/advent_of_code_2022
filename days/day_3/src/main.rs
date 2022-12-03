@@ -2,7 +2,7 @@ use std::{collections::HashMap, fs};
 
 fn main() {
     let input = fs::read_to_string("days/day_3/input.txt").unwrap();
-    // part_1(&input);
+    part_1(&input);
     part_2(&input);
 }
 
