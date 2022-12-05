@@ -4,22 +4,18 @@ use std::{
 };
 
 fn main() {
-    let crates = fs::read_to_string("days/day_5/crates.txt").unwrap();
     let input = fs::read_to_string("days/day_5/input.txt").unwrap();
-    // part_1(&input, &crates);
-    part_2(&input, &crates);
+    part_1(&input);
+    part_2(&input);
 }
 
-fn part_1(input: &String, crates: &String) {
+fn part_1(input: &String) {
     let mut stacks = HashMap::new();
     // stacks.insert(1, VecDeque::from(["N", "Z"]));
     // stacks.insert(2, VecDeque::from(["D", "C", "M"]));
     // stacks.insert(3, VecDeque::from(["P"]));
 
-    stacks.insert(
-        1,
-        VecDeque::from(["N", "T", "B", "S", " Q", "H", " G", "R"]),
-    );
+    stacks.insert(1, VecDeque::from(["N", "T", "B", "S", "Q", "H", "G", "R"]));
     stacks.insert(2, VecDeque::from(["J", "Z", "P", "D", "F", "S", "H"]));
     stacks.insert(3, VecDeque::from(["V", "H", "Z"]));
     stacks.insert(4, VecDeque::from(["H", "G", "F", "J", "Z", "M"]));
@@ -57,18 +53,16 @@ fn part_1(input: &String, crates: &String) {
     println!("{:?}", stacks.get(&7));
     println!("{:?}", stacks.get(&8));
     println!("{:?}", stacks.get(&9));
+    println!();
 }
 
-fn part_2(input: &String, crates: &String) {
+fn part_2(input: &String) {
     let mut stacks = HashMap::new();
     // stacks.insert(1, VecDeque::from(["N", "Z"]));
     // stacks.insert(2, VecDeque::from(["D", "C", "M"]));
     // stacks.insert(3, VecDeque::from(["P"]));
 
-    stacks.insert(
-        1,
-        VecDeque::from(["N", "T", "B", "S", " Q", "H", " G", "R"]),
-    );
+    stacks.insert(1, VecDeque::from(["N", "T", "B", "S", "Q", "H", "G", "R"]));
     stacks.insert(2, VecDeque::from(["J", "Z", "P", "D", "F", "S", "H"]));
     stacks.insert(3, VecDeque::from(["V", "H", "Z"]));
     stacks.insert(4, VecDeque::from(["H", "G", "F", "J", "Z", "M"]));
@@ -113,4 +107,5 @@ fn part_2(input: &String, crates: &String) {
     println!("{:?}", stacks.get(&7));
     println!("{:?}", stacks.get(&8));
     println!("{:?}", stacks.get(&9));
+    println!();
 }
