@@ -6,10 +6,7 @@ fn main() {
     part_2(&input);
 }
 
-fn part_2(_input: &String) {}
-
 fn part_1(input: &String) {
-    // for line in input.lines() {
     let mut v1 = "".to_string();
     let mut v2 = "".to_string();
     let mut v3 = "".to_string();
@@ -29,13 +26,34 @@ fn part_1(input: &String) {
             && (v3 != v4)
             && (v4 != "")
         {
-            println!("v1: {v1}");
-            println!("v2: {v2}");
-            println!("v3: {v3}");
-            println!("v4: {v4}");
             println!("{}", index + 1);
             break;
         }
     }
-    // }
+}
+
+use array_tool::vec::Uniq;
+
+fn part_2(input: &String) {
+    let mut window = Vec::new();
+    for _ in 0..14 {
+        window.push(String::new());
+    }
+
+    for (index, character) in input.chars().enumerate() {
+        for index in (0..14).rev() {
+            if index != 0 {
+                window[index] = window[index - 1].clone();
+            } else {
+                window[index] = character.to_string();
+            }
+        }
+
+        let test = window.to_vec();
+
+        if test.is_unique() {
+            println!("{}", index + 1);
+            break;
+        }
+    }
 }
