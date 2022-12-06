@@ -10,7 +10,7 @@ fn part_1(input: &String) {
     let mut v1 = "".to_string();
     let mut v2 = "".to_string();
     let mut v3 = "".to_string();
-    let mut v4 = "".to_string();
+    let mut v4;
 
     for (index, character) in input.chars().enumerate() {
         v4 = v3.clone();
